@@ -70,8 +70,7 @@ class Animal():
 dog = Animal()
 whale = Animal()
 
-dog = Animal("Canis")
-
-whale = Animal("Cetacea")
+dog.name = "Canis"
+whale.name = "Cetacea"
 
 dog.print_name()
