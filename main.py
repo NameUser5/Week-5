@@ -56,7 +56,7 @@ class Animal():
   lifespan = 0
   # name = ""
   kindgom = "" 
-  # I am thinking of biological 'classes', but I don't want to confuse myself
+  # Not scientifically accurate
   blood_type = ""
   limbs = 0
   habitat = ""
