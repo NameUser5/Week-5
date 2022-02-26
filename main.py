@@ -74,3 +74,4 @@ dog.name = "Canis"
 whale.name = "Cetacea"
 
 dog.print_name()
+whale.print_name()
