@@ -181,8 +181,9 @@ for sku in skus:
   sku.color = random.choice(colors)
   print(sku.color)
   
-# # WEEK 5 CH21:
+# # WEEK 5 CH21:'
 
+'''NOT RECURSIVE'''
 ask = True
 
 while ask == True:
@@ -203,6 +204,16 @@ while ask == True:
   else:
     print("Try again")
 
+'''RECURSIVE,UNBOUND'''
+def print_all(num):
+  if num == 0:
+    print(num) # to include 0 in the print
+    return
+  print(num)
+  print_all(num-1)
+
+num = int(input("Enter an integer."))
+print_all(num)
 # # WEEK 5 CH22:
 
 list = [1,3,5,6,8,9,10,14,16,18, 22,24,25,26,28,30,31,32,45,46,67,70,71,72,73,74,75,88]
