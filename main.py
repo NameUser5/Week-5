@@ -137,41 +137,50 @@
 # print(bunny.print_all())
 
 # # WEEK 5 CH16:
-# class SKU():
-#   def __init__(self,part_number,color,price,make,model,grade):
-#     self.part_number = part_number
-#     self.color = color
-#     self.price = price
-#     self.make = make
-#     self.model = model
-#     self.grade = grade
+class SKU():
+  def __init__(self,make,part_number,color="",price=0,model="",grade=""):
+    self.part_number = part_number
+    self.color = color
+    self.price = price
+    self.make = make
+    self.model = model
+    self.grade = grade
 
-#   def print_stats(self):
-#     print(self.part_number,self.color,self.price,self.make,self.model,self.grade
+  def print_stats(self):
+    print(self.part_number,self.color,self.price,self.make,self.model,self.grade)
     
-# #confused about Challenge # 17
+# confused about Challenge # 17 --> set defaults for non-essential paramenters!
 
-# ring = SKU("RIN123","puce",25000,"VanCleef","Etoile","18k")
-# television = SKU("TEL158","puce",589.98,"Sony","4KCoolness","New")
-# stuffed_animal = SKU("CUTE459","puce",19.99,"Squishmallows","Wildlife Series","New")
-# bowl = SKU("BOWL47","puce",350,"L'Objet","Eternity","Malachite","Vintage")
-# potted_plant = SKU("TREE83","puce",4850,"Takahashi Bonsai","Miyoko-Cedar","Matured")
-# lotion = SKU("NIV783","puce",12.99,"Nivea","Tropical","New")
-# lip_balm = SKU("EOS001","puce",3.99,"EOS","Toasted Marshmallow-Sphere","New")
-# water = SKU("WAT901","puce",5,"Boxed Water","Unflavored","New")
-# shoes = SKU("SHU102","puce",150,"Casadei","Blade Runner","Used")
-# fountain_pen = SKU("WRI535","puce",75,"Kaweco","Sport Plus","Steel","Used")
+ring = SKU("RIN123","puce",25000,"VanCleef","Etoile","18k")
+television = SKU("TEL158","puce",589.98,"Sony","4KCoolness","New")
+stuffed_animal = SKU("CUTE459","puce",19.99,"Squishmallows","WildlifeSeries","New")
+bowl = SKU("BOWL47","puce",350,"L'Objet","Eternity","Vintage")
+potted_plant = SKU("TREE83","puce",4850,"Takahashi Bonsai","Miyoko_Cedar","Matured")
+lotion = SKU("NIV783","puce",12.99,"Nivea","Tropical","New")
+lip_balm = SKU("EOS001","puce",3.99,"EOS","Toasted_Marshmallow_Sphere","New")
+water = SKU("WAT901","puce",5,"BoxedWater","Unflavored","New")
+shoes = SKU("SHU102","puce",150,"Casadei","Blade_Runner","Used")
+fountain_pen = SKU("WRI535","puce",75,"Kaweco","Steel","Used")
 
-# # WEEK 5 CH18 & 19:
-# skus = [ring,television,stuffed_animal,bowl,potted_plant,lotion,lip_balm,water,shoes,fountain_pen]
 
-# print(skus)
+# WEEK 5 CH18 & 19:
+skus = [ring,television,stuffed_animal,bowl,potted_plant,lotion,lip_balm,water,shoes,fountain_pen]
 
-# print(lotion.print_stats())
+# print(skus)--> prints location of the list
+for s in skus:
+  print(s.part_number)
 
-# # WEEK 5 CH20 - INCOMPLETE:
-# colors = ["void", "infrared", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "ultraviolet"]
+print(lotion.print_stats())
 
+# # WEEK 5 CH20:
+colors = ["void", "infrared", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "ultraviolet"]
+
+import random
+
+for sku in skus:
+  sku.color = random.choice(colors)
+  print(sku.color)
+  
 # # WEEK 5 CH21:
 
 ask = True
@@ -215,5 +224,4 @@ print(first_half + second_half)
 # second_half = range(list[midpoint+1],list[-1]) --> prints actual range.
 
 # # WEEK 5 CH23:
-
 
