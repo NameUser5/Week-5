@@ -138,7 +138,7 @@
 
 # # WEEK 5 CH16:
 class SKU():
-  def __init__(self,make,part_number,color="",price=0,model="",grade=""):
+  def __init__(self,part_number,make,color="",price=0,model="",grade=""):
     self.part_number = part_number
     self.color = color
     self.price = price
@@ -151,16 +151,16 @@ class SKU():
     
 # confused about Challenge # 17 --> set defaults for non-essential paramenters!
 
-ring = SKU("RIN123","puce",25000,"VanCleef","Etoile","18k")
-television = SKU("TEL158","puce",589.98,"Sony","4KCoolness","New")
-stuffed_animal = SKU("CUTE459","puce",19.99,"Squishmallows","WildlifeSeries","New")
-bowl = SKU("BOWL47","puce",350,"L'Objet","Eternity","Vintage")
-potted_plant = SKU("TREE83","puce",4850,"Takahashi Bonsai","Miyoko_Cedar","Matured")
-lotion = SKU("NIV783","puce",12.99,"Nivea","Tropical","New")
-lip_balm = SKU("EOS001","puce",3.99,"EOS","Toasted_Marshmallow_Sphere","New")
-water = SKU("WAT901","puce",5,"BoxedWater","Unflavored","New")
-shoes = SKU("SHU102","puce",150,"Casadei","Blade_Runner","Used")
-fountain_pen = SKU("WRI535","puce",75,"Kaweco","Steel","Used")
+ring = SKU("RIN123","VanCleef","puce",25000,"Etoile","18k")
+television = SKU("TEL158","Sony","puce",589.98,"4KCoolness","New")
+stuffed_animal = SKU("CUTE459","Squishmallows","puce",19.99,"WildlifeSeries","New")
+bowl = SKU("BOWL47","L'Objet","puce",350,"Eternity","Vintage")
+potted_plant = SKU("TREE83","Takahashi Bonsai","puce",4850,"Miyoko_Cedar","Matured")
+lotion = SKU("NIV783","Nivea","puce",12.99,"Tropical","New")
+lip_balm = SKU("EOS001","EOS","puce",3.99,"Toasted_Marshmallow_Sphere","New")
+water = SKU("WAT901","BoxedWater","puce",5,"Unflavored","New")
+shoes = SKU("SHU102","Casadei","puce",150,"Blade_Runner","Used")
+fountain_pen = SKU("WRI535","Kaweco","puce",75,"Steel","Used")
 
 
 # WEEK 5 CH18 & 19:
@@ -168,7 +168,7 @@ skus = [ring,television,stuffed_animal,bowl,potted_plant,lotion,lip_balm,water,s
 
 # print(skus)--> prints location of the list
 for s in skus:
-  print(s.part_number)
+  print(s.part_number) # --> "name" variable was not declared, so use what you *did* declare
 
 print(lotion.print_stats())
 
@@ -191,18 +191,18 @@ while ask == True:
   if number.isdigit():
     number = int(number)
     if number == 0:
-      print("Try a higher number.")
+      print("Try a higher number. ")
     if number > 0 and number < 101:
       for r in range(100, number, -1):
         print(r)
       for r in range(number,-1,-1):
         print(r)
     if number >= 101:
-      print("Try again.")
+      print("Try again. ")
   elif number == "x" or number == "X":
     ask = False
   else:
-    print("Try again")
+    print("Try again. ")
 
 '''RECURSIVE,UNBOUND'''
 def print_all(num):
@@ -214,6 +214,7 @@ def print_all(num):
 
 num = int(input("Enter an integer."))
 print_all(num)
+
 # # WEEK 5 CH22:
 
 list = [1,3,5,6,8,9,10,14,16,18, 22,24,25,26,28,30,31,32,45,46,67,70,71,72,73,74,75,88]
@@ -232,7 +233,7 @@ second_half = list[midpoint+1 : endpoint]
 print(second_half)
 
 print(first_half + second_half)
-# second_half = range(list[midpoint+1],list[-1]) --> prints actual range.
+# second_half = range(list[midpoint+1],list[-1]) --> actual range, NOT corresponding list
 
 # # WEEK 5 CH23:
 
