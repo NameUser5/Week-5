@@ -149,7 +149,7 @@ class SKU():
   def print_stats(self):
     print(self.part_number,self.color,self.price,self.make,self.model,self.grade)
     
-# confused about Challenge # 17 --> set defaults for non-essential paramenters!
+# confused about Challenge # 17 --> solution: set defaults for non-essential paramenters!
 
 ring = SKU("RIN123","VanCleef","puce",25000,"Etoile","18k")
 television = SKU("TEL158","Sony","puce",589.98,"4KCoolness","New")
@@ -212,7 +212,7 @@ def print_all(num):
   print(num)
   print_all(num-1)
 
-num = int(input("Enter an integer."))
+num = int(input("Enter an integer. "))
 print_all(num)
 
 # # WEEK 5 CH22:
