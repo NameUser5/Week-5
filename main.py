@@ -162,9 +162,12 @@ water = SKU("WAT901","puce",5,"Boxed Water","Unflavored","New")
 shoes = SKU("SHU102","puce",150,"Casadei","Blade Runner","Used")
 fountain_pen = SKU("WRI535","puce",75,"Kaweco","Sport Plus","Steel","Used")
 
-# WEEK 5 CH18:
+# WEEK 5 CH18 & 19:
 skus = [ring,television,stuffed_animal,bowl,potted_plant,lotion,lip_balm,water,shoes,fountain_pen]
 
 print(skus)
 
 print(lotion.print_stats())
+
+# WEEK 5 CH20:
+colors = ["void", "infrared", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "ultraviolet"]
