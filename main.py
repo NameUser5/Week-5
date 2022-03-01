@@ -75,3 +75,53 @@ whale.name = "Cetacea"
 
 dog.print_name()
 whale.print_name()
+print(lizard.name)
+print(crab.name)
+
+# WEEK 5 CH8-CH12:
+
+class Animal():
+  def __init__(self,lifespan,name,kingdom,blood_type,limbs,habitat,magic_num):
+    self.lifespan = lifespan
+    self.name = name
+    self.kingdom = kingdom # I am thinking of biological 'classes', but I don't want to confuse myself
+    self.blood_type = blood_type
+    self.limbs = limbs
+    self.habitat = habitat
+    self.magic_num = magic_num
+
+  def print_all(self):
+    print(self.lifespan,self.name,self.kingdom,self.blood_type,self.limbs,self.habitat) 
+
+
+dog = Animal(12,"Canis","Mammalia","warm-blooded",4,"land",94)
+
+lizard = Animal(30,"Lacertilia","Repltilia","cold-blooded",4,"land",1.5)
+
+whale = Animal(100,"Cetacea","Mammalia","warm-blooded",2,"water",3)
+
+crab = Animal(3,"Callinectes","Crustacea","cold-blooded",10,"water",-9)
+
+animals = [dog, lizard, whale, crab]
+
+print(dog.habitat)
+
+for a in animals:
+  print(a.lifespan)
+
+for a in animals:
+  print(a.magic_num)
+
+
+# def avg_magic(self,magic_num):
+
+total = 0 
+for a in animals:
+  total = a.magic_num + total
+magic_average = total / len(animals)
+
+print(magic_average)
+
+print(dog.print_all())
+
+print(lizard.print_all())
