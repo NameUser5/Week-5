@@ -263,6 +263,7 @@ try:
 except IndexError: 
   print("False")
 
+# # WEEK 5 CH25:
 
 class Artist():
   def __init__(self,name,genre,best_song_ever = "",total_sales = 0, record_label = ""):
@@ -272,21 +273,13 @@ class Artist():
     self.total_sales = total_sales
     self.record_label = record_label
 
-  def print_genre(genre):
-    for art in artists:
-      if art.genre == genre:
-        print(self.name,self.genre)
-  # WRONG def print_genre(self,genre):
-  #   for art in Artists():
-  #     if art.genre == genre: <--- Do not do this
-  #       print(self.name,self.genre)
-
+  
 Ella = Artist("Ella Fitzgerald","jazz","Dream a Little Dream",10000,"Vintage Records")
 Frank = Artist("Frank Sinatra","jazz","Mac the Knife",10002,"Ravioli Records")
-Onika = Artist("Nicki M.","hip-hop","Anaconda",200000,"Barbie and Ken Records")
+Onika = Artist("Nicki Minaj","hip-hop","Anaconda",200000,"Barbie and Ken Records")
 BOC = Artist("Blue Oyster Cult","rock","Don't Fear The Reaper",50000,"Starlight Records")
 Pisk = Artist("P!sK","electro swing","Black Coffee",60053,"Vintage Records")
-Britney = Artist("Britney Jean Spears","pop","Piece of Me",7002580,"Futura Records")
+Britney = Artist("Britney Jean Spears","pop","Piece of Me",17002580,"Futura Records")
 Bey = Artist("Beyonce","hip-hop","Single Ladies",15300058,"Park Ivy Records")    
 Dre = Artist("Dr. Dre","rap","Keep Their Heads Ringing",200052, "Death Row Records")
 Apa = Artist("Apashe","alternative","No Twerk",20000,"Indie Records")
@@ -299,9 +292,16 @@ Fela = Artist("Fela Kuti","jazz","O.D.O.O",90100,"Wahala Records")
 artists = [Ella, Frank, Onika, BOC, Pisk, Britney, Bey, Dre, Apa, MsGraves, Johnny, Persona, Rosetta, Fela]
 
 def print_genre(genre):
-  for art in artists:
-    if art.genre == genre:
-      print(art.name)
+  for _ in artists:
+    if _.genre == genre:
+      print(_.name)
 
 print_genre("jazz")
+print_genre("hip-hop")
+
+# def print_genre(self,genre):  <-- WRONG, no need to put "self" 
+  #   for art in Artists(): <--- you are trying to use the class; use a LIST
+  #     if art.genre == genre:
+  #       print(self.name,self.genre)
+
 
