@@ -272,8 +272,10 @@ class Artist():
     self.total_sales = total_sales
     self.record_label = record_label
 
-  def print_genre(self,name,genre):
-    print(self.name,self.genre)
+  # def print_genre(self,genre):
+  #   for art in Artists():
+  #     if art.genre == genre:
+  #       print(self.name,self.genre)
 
 Ella = Artist("Ella Fitzgerald","jazz","Dream a Little Dream",10000,"Vintage Records")
 Frank = Artist("Frank Sinatra","jazz","Mac the Knife",10002,"Ravioli Records")
@@ -282,13 +284,20 @@ BOC = Artist("Blue Oyster Cult","rock","Don't Fear The Reaper",50000,"Starlight 
 Pisk = Artist("P!sK","electro swing","Black Coffee",60053,"Vintage Records")
 Britney = Artist("Britney Jean Spears","pop","Piece of Me",7002580,"Futura Records")
 Bey = Artist("Beyonce","hip-hop","Single Ladies",15300058,"Park Ivy Records")    
-Dre = Artist("Dr. Dre","rap","Keep Their Heads Ringing",200052, "Death Row Reords")
+Dre = Artist("Dr. Dre","rap","Keep Their Heads Ringing",200052, "Death Row Records")
 Apa = Artist("Apashe","alternative","No Twerk",20000,"Indie Records")
 MsGraves = Artist("Denyce Graves","opera","Samson et Dalila, Act 2",30008,"Libre Records")
 Johnny = Artist("Johnny Clarke","rasta","Declaration of Rights",56000,"Irie Records")
 Persona = Artist("Some Japanese Person","jazz","Layer Cake",15000,"Persona Five")
+Rosetta = Artist("Sister Rosetta Tharpe","blues","Didn't It Rain?",10000,"Oldtimer Records")
+Fela = Artist("Fela Kuti","jazz","O.D.O.O",90100,"Wahala Records")
 
 
 
+def print_genre(self,genre):
+  for art in Artists():
+    if art.genre == genre:
+      print(self.name,self.genre)
 
+print_genre(self,jazz)
 
