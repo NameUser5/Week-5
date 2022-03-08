@@ -272,9 +272,13 @@ class Artist():
     self.total_sales = total_sales
     self.record_label = record_label
 
-  # def print_genre(self,genre):
+  def print_genre(genre):
+    for art in artists:
+      if art.genre == genre:
+        print(self.name,self.genre)
+  # WRONG def print_genre(self,genre):
   #   for art in Artists():
-  #     if art.genre == genre:
+  #     if art.genre == genre: <--- Do not do this
   #       print(self.name,self.genre)
 
 Ella = Artist("Ella Fitzgerald","jazz","Dream a Little Dream",10000,"Vintage Records")
@@ -292,12 +296,12 @@ Persona = Artist("Some Japanese Person","jazz","Layer Cake",15000,"Persona Five"
 Rosetta = Artist("Sister Rosetta Tharpe","blues","Didn't It Rain?",10000,"Oldtimer Records")
 Fela = Artist("Fela Kuti","jazz","O.D.O.O",90100,"Wahala Records")
 
+artists = [Ella, Frank, Onika, BOC, Pisk, Britney, Bey, Dre, Apa, MsGraves, Johnny, Persona, Rosetta, Fela]
 
-
-def print_genre(self,genre):
-  for art in Artists():
+def print_genre(genre):
+  for art in artists:
     if art.genre == genre:
-      print(self.name,self.genre)
+      print(art.name)
 
-print_genre(self,jazz)
+print_genre("jazz")
 
