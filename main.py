@@ -274,20 +274,20 @@ class Artist():
     self.record_label = record_label
 
   
-Ella = Artist("Ella Fitzgerald","jazz","Dream a Little Dream",10000,"Vintage Records")
-Frank = Artist("Frank Sinatra","jazz","Mac the Knife",10002,"Ravioli Records")
-Onika = Artist("Nicki Minaj","hip-hop","Anaconda",200000,"Barbie and Ken Records")
-BOC = Artist("Blue Oyster Cult","rock","Don't Fear The Reaper",50000,"Starlight Records")
-Pisk = Artist("P!sK","electro swing","Black Coffee",60053,"Vintage Records")
-Britney = Artist("Britney Jean Spears","pop","Piece of Me",17002580,"Futura Records")
-Bey = Artist("Beyonce","hip-hop","Single Ladies",15300058,"Park Ivy Records")    
-Dre = Artist("Dr. Dre","rap","Keep Their Heads Ringing",200052, "Death Row Records")
-Apa = Artist("Apashe","alternative","No Twerk",20000,"Indie Records")
-MsGraves = Artist("Denyce Graves","opera","Samson et Dalila, Act 2",30008,"Libre Records")
-Johnny = Artist("Johnny Clarke","rasta","Declaration of Rights",56000,"Irie Records")
-Persona = Artist("Some Japanese Person","jazz","Layer Cake",15000,"Persona Five")
-Rosetta = Artist("Sister Rosetta Tharpe","blues","Didn't It Rain?",10000,"Oldtimer Records")
-Fela = Artist("Fela Kuti","jazz","O.D.O.O",90100,"Wahala Records")
+ella = Artist("Ella Fitzgerald","jazz","Dream a Little Dream",10000,"Vintage Records")
+frank = Artist("Frank Sinatra","jazz","Mac the Knife",10002,"Ravioli Records")
+onika = Artist("Nicki Minaj","hip-hop","Anaconda",200000,"Barbie and Ken Records")
+boc = Artist("Blue Oyster Cult","rock","Don't Fear The Reaper",50000,"Starlight Records")
+pisk = Artist("P!sK","electro swing","Black Coffee",60053,"Vintage Records")
+britney = Artist("Britney Jean Spears","pop","Piece of Me",17002580,"Futura Records")
+bey = Artist("Beyonce","hip-hop","Single Ladies",15300058,"Park Ivy Records")    
+dre = Artist("Dr. Dre","rap","Keep Their Heads Ringing",200052, "Death Row Records")
+apa = Artist("Apashe","alternative","No Twerk",20000,"Indie Records")
+msgraves = Artist("Denyce Graves","opera","Samson et Dalila, Act 2",30008,"Libre Records")
+johnny = Artist("Johnny Clarke","rasta","Declaration of Rights",56000,"Irie Records")
+persona = Artist("Some Japanese Person","jazz","Layer Cake",15000,"Persona Five")
+rosetta = Artist("Sister Rosetta Tharpe","blues","Didn't It Rain?",10000,"Oldtimer Records")
+fela = Artist("Fela Kuti","jazz","O.D.O.O",90100,"Wahala Records")
 
 artists = [Ella, Frank, Onika, BOC, Pisk, Britney, Bey, Dre, Apa, MsGraves, Johnny, Persona, Rosetta, Fela]
 
