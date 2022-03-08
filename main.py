@@ -136,104 +136,145 @@
 
 # print(bunny.print_all())
 
-# # WEEK 5 CH16:
-class SKU():
-  def __init__(self,part_number,make,color="",price=0,model="",grade=""):
-    self.part_number = part_number
-    self.color = color
-    self.price = price
-    self.make = make
-    self.model = model
-    self.grade = grade
+# # # WEEK 5 CH16:
+# class SKU():
+#   def __init__(self,part_number,make,color="",price=0,model="",grade=""):
+#     self.part_number = part_number
+#     self.color = color
+#     self.price = price
+#     self.make = make
+#     self.model = model
+#     self.grade = grade
 
-  def print_stats(self):
-    print(self.part_number,self.color,self.price,self.make,self.model,self.grade)
+#   def print_stats(self):
+#     print(self.part_number,self.color,self.price,self.make,self.model,self.grade)
     
-# confused about Challenge # 17 --> solution: set defaults for non-essential paramenters!
+# # confused about Challenge # 17 --> solution: set defaults for non-essential paramenters!
 
-ring = SKU("RIN123","VanCleef","puce",25000,"Etoile","18k")
-television = SKU("TEL158","Sony","puce",589.98,"4KCoolness","New")
-stuffed_animal = SKU("CUTE459","Squishmallows","puce",19.99,"WildlifeSeries","New")
-bowl = SKU("BOWL47","L'Objet","puce",350,"Eternity","Vintage")
-potted_plant = SKU("TREE83","Takahashi Bonsai","puce",4850,"Miyoko_Cedar","Matured")
-lotion = SKU("NIV783","Nivea","puce",12.99,"Tropical","New")
-lip_balm = SKU("EOS001","EOS","puce",3.99,"Toasted_Marshmallow_Sphere","New")
-water = SKU("WAT901","BoxedWater","puce",5,"Unflavored","New")
-shoes = SKU("SHU102","Casadei","puce",150,"Blade_Runner","Used")
-fountain_pen = SKU("WRI535","Kaweco","puce",75,"Steel","Used")
+# ring = SKU("RIN123","VanCleef","puce",25000,"Etoile","18k")
+# television = SKU("TEL158","Sony","puce",589.98,"4KCoolness","New")
+# stuffed_animal = SKU("CUTE459","Squishmallows","puce",19.99,"WildlifeSeries","New")
+# bowl = SKU("BOWL47","L'Objet","puce",350,"Eternity","Vintage")
+# potted_plant = SKU("TREE83","Takahashi Bonsai","puce",4850,"Miyoko_Cedar","Matured")
+# lotion = SKU("NIV783","Nivea","puce",12.99,"Tropical","New")
+# lip_balm = SKU("EOS001","EOS","puce",3.99,"Toasted_Marshmallow_Sphere","New")
+# water = SKU("WAT901","BoxedWater","puce",5,"Unflavored","New")
+# shoes = SKU("SHU102","Casadei","puce",150,"Blade_Runner","Used")
+# fountain_pen = SKU("WRI535","Kaweco","puce",75,"Steel","Used")
 
 
-# WEEK 5 CH18 & 19:
-skus = [ring,television,stuffed_animal,bowl,potted_plant,lotion,lip_balm,water,shoes,fountain_pen]
+# # WEEK 5 CH18 & 19:
+# skus = [ring,television,stuffed_animal,bowl,potted_plant,lotion,lip_balm,water,shoes,fountain_pen]
 
-# print(skus)--> prints location of the list
-for s in skus:
-  print(s.part_number) # --> "name" variable was not declared, so use what you *did* declare
+# # print(skus)--> prints location of the list
+# for s in skus:
+#   print(s.part_number) # --> "name" variable was not declared, so use what you *did* declare
 
-print(lotion.print_stats())
+# print(lotion.print_stats())
 
-# # WEEK 5 CH20:
-colors = ["void", "infrared", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "ultraviolet"]
+# # # WEEK 5 CH20:
+# colors = ["void", "infrared", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "ultraviolet"]
 
-import random
+# import random
 
-for sku in skus:
-  sku.color = random.choice(colors)
-  print(sku.color)
+# for sku in skus:
+#   sku.color = random.choice(colors)
+#   print(sku.color)
   
-# # WEEK 5 CH21:'
+# # # WEEK 5 CH21:'
 
-'''NOT RECURSIVE'''
-ask = True
+# '''NOT RECURSIVE'''
+# ask = True
 
-while ask == True:
-  number = input("Enter an integer, or 'x' to stop. ")
-  if number.isdigit():
-    number = int(number)
-    if number == 0:
-      print("Try a higher number. ")
-    if number > 0 and number < 101:
-      for r in range(100, number, -1):
-        print(r)
-      for r in range(number,-1,-1):
-        print(r)
-    if number >= 101:
-      print("Try again. ")
-  elif number == "x" or number == "X":
-    ask = False
-  else:
-    print("Try again. ")
+# while ask == True:
+#   number = input("Enter an integer, or 'x' to stop. ")
+#   if number.isdigit():
+#     number = int(number)
+#     if number == 0:
+#       print("Try a higher number. ")
+#     if number > 0 and number < 101:
+#       for r in range(100, number, -1):
+#         print(r)
+#       for r in range(number,-1,-1):
+#         print(r)
+#     if number >= 101:
+#       print("Try again. ")
+#   elif number == "x" or number == "X":
+#     ask = False
+#   else:
+#     print("Try again. ")
 
-'''RECURSIVE,UNBOUND'''
-def print_all(num):
-  if num == 0:
-    print(num) # to include 0 in the print
-    return
-  print(num)
-  print_all(num-1)
+# '''RECURSIVE,UNBOUND'''
+# def print_all(num):
+#   if num == 0:
+#     print(num) # to include 0 in the print
+#     return
+#   print(num)
+#   print_all(num-1)
 
-num = int(input("Enter an integer. "))
-print_all(num)
+# num = int(input("Enter an integer. "))
+# print_all(num)
 
-# # WEEK 5 CH22:
+# # # WEEK 5 CH22:
 
-list = [1,3,5,6,8,9,10,14,16,18, 22,24,25,26,28,30,31,32,45,46,67,70,71,72,73,74,75,88]
+# list = [1,3,5,6,8,9,10,14,16,18, 22,24,25,26,28,30,31,32,45,46,67,70,71,72,73,74,75,88]
 
-print(list)
-print(len(list))
+# print(list)
+# print(len(list))
 
-midpoint = int(len(list) / 2)
-endpoint = len(list)
-print(midpoint)
-print(list[midpoint])
+# midpoint = int(len(list) / 2)
+# endpoint = len(list) #no need to create an endpoint variable
+# print(midpoint)
+# print(list[midpoint])
 
-first_half = list[0 : midpoint+1]
-print(first_half)
-second_half = list[midpoint+1 : endpoint]
-print(second_half)
+# first_half = list[0 : midpoint+1]
+# print(first_half)
+# second_half = list[midpoint+1 : endpoint]
+# print(second_half)
 
-print(first_half + second_half)
-# second_half = range(list[midpoint+1],list[-1]) --> actual range, NOT corresponding list
+# print(first_half + second_half)
+# # second_half = range(list[midpoint+1],list[-1]) --> actual range, NOT corresponding list
 
 # # WEEK 5 CH23:
+
+list = [1,3,5,6,8,9,10,14,16,18,22,24,25,26,28,30,31,32,45,46,67,70,71,72,73,74,75,88]
+
+def find_number(list,target):
+  midpoint = len(list)//2
+  if list[midpoint] == target:
+    return True 
+  elif target < list[midpoint]:
+    return find_number(list[:midpoint],target)
+  elif target > list[midpoint]:
+    return find_number(list[midpoint+1:],target)
+  else:
+    return False
+    
+
+print(find_number(list,74))
+print(find_number(list,3))
+print(find_number(list,22))
+print(find_number(list,88))
+
+# # WEEK 5 CH24:
+
+try: 
+  find_number(list,81)
+except IndexError: 
+  print("False")
+
+
+class Artist():
+  def __init__(self,name,genre,best_song_ever = "",total_sales = 0, record_label = ""):
+    self.name = name
+    self.genre = genre
+    self.best_song_ever = best_song_ever
+    self.total_sales = total_sales
+    self.record_label = record_label
+
+    
+  
+
+
+
 
