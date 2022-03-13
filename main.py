@@ -289,7 +289,7 @@ persona = Artist("Some Japanese Person","jazz","Layer Cake",15000,"Persona Five"
 rosetta = Artist("Sister Rosetta Tharpe","blues","Didn't It Rain?",10000,"Oldtimer Records")
 fela = Artist("Fela Kuti","jazz","O.D.O.O",90100,"Wahala Records")
 
-artists = [Ella, Frank, Onika, BOC, Pisk, Britney, Bey, Dre, Apa, MsGraves, Johnny, Persona, Rosetta, Fela]
+artists = [ella, frank, onika, boc, pisk, britney, bey, dre, apa, msgraves, johnny, persona, rosetta, fela]
 
 def print_genre(genre):
   for _ in artists:
